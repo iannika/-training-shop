@@ -1,0 +1,91 @@
+.container-sale {
+    width: 89%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 90px;
+  }
+  
+  .container-sale .sale-new, 
+  .container-sale .new-sale {
+    width: 540px;
+    height: 260px;
+    background: url(../../assets/img/new-season.jpg) center/100% no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .container-sale .sale-new .new, 
+  .container-sale .sale-new .sale, 
+  .container-sale .new-sale .new, 
+  .container-sale .new-sale .sale {
+    width: 55%;
+    height: 71px;
+    background: #fff;
+    border-radius: 4%;
+    text-align: center;
+  }
+  
+  .container-sale .sale-new .new span, 
+  .container-sale .sale-new .new .text, 
+  .container-sale .sale-new .sale span, 
+  .container-sale .sale-new .sale .text, 
+  .container-sale .new-sale .new span, 
+  .container-sale .new-sale .new .text, 
+  .container-sale .new-sale .sale span, 
+  .container-sale .new-sale .sale .text {
+    font-family: 'Spartan';
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 60%;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-top: 4%;
+  }
+  
+  .container-sale .sale-new .new .text, 
+  .container-sale .sale-new .sale .text, 
+  .container-sale .new-sale .new .text, 
+  .container-sale .new-sale .sale .text {
+    font-size: 16px;
+    opacity: 100%;
+    display: block;
+  }
+  
+  @media screen and (max-width: 630px) {
+    .container-sale .sale-new .new .text, 
+    .container-sale .sale-new .sale .text, 
+    .container-sale .new-sale .new .text, 
+    .container-sale .new-sale .sale .text {
+      font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1280 - 320)));
+    }
+  }
+  
+  @media screen and (max-width: 630px) {
+    .container-sale .sale-new, 
+    .container-sale .new-sale {
+      height: calc(150px + (260 - 150) * ((100vw - 320px) / (1280 - 320)));
+    }
+  }
+  
+  .container-sale .new-sale {
+    background: url(../../assets/img/sale.jpg) center/100% no-repeat;
+  }
+  
+  @media screen and (max-width: 630px) {
+    .container-new-sale {
+      padding-top: calc(30px + (90 - 30) * ((100vw - 320px) / (1280 - 320)));
+    }
+  }

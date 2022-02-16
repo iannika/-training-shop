@@ -1,0 +1,92 @@
+.container-blog {
+    width: 89%;
+    margin: 0 auto;
+    padding-top: 8%;
+    font-family: 'Spartan';
+  }
+  
+  .container-blog .blog-title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+  
+  .container-blog .blog-title .title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .container-blog .blog-title button {
+    border: none;
+    background: none;
+  }
+  
+  .container-blog .blog-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .container-blog .blog-img .card-one, 
+  .container-blog .blog-img .card-two, 
+  .container-blog .blog-img .card-three {
+    background: url(../../assets/img/blog-1.jpg) center/100% no-repeat;
+    width: 350px;
+    height: 276px;
+    margin-bottom: 70px;
+  }
+  
+  .container-blog .blog-img .card-one .blog-text, 
+  .container-blog .blog-img .card-two .blog-text, 
+  .container-blog .blog-img .card-three .blog-text {
+    width: 86%;
+    padding: 20px 20px;
+    background: #fff;
+    position: relative;
+    left: 50%;
+    top: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .container-blog .blog-img .card-one .blog-text .sub-title, 
+  .container-blog .blog-img .card-one .blog-text .text, 
+  .container-blog .blog-img .card-two .blog-text .sub-title, 
+  .container-blog .blog-img .card-two .blog-text .text, 
+  .container-blog .blog-img .card-three .blog-text .sub-title, 
+  .container-blog .blog-img .card-three .blog-text .text {
+    font-size: 14px;
+    display: block;
+  }
+  
+  .container-blog .blog-img .card-one .blog-text .sub-title, 
+  .container-blog .blog-img .card-two .blog-text .sub-title, 
+  .container-blog .blog-img .card-three .blog-text .sub-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  
+  .container-blog .blog-img .card-one .blog-text .text, 
+  .container-blog .blog-img .card-two .blog-text .text, 
+  .container-blog .blog-img .card-three .blog-text .text {
+    opacity: 80%;
+  }
+  
+  .container-blog .blog-img .card-two {
+    background: url(../../assets/img/blog-2.jpg) center/100% no-repeat;
+  }
+  
+  .container-blog .blog-img .card-three {
+    background: url(../../assets/img/blog-3.jpg) center/100% no-repeat;
+  }

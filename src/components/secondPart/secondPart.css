@@ -1,0 +1,72 @@
+.container-advantage {
+    margin: 0 auto;
+    width: 89%;
+    height: 103px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .container-advantage .free-shipping, 
+  .container-advantage .days-return, 
+  .container-advantage .support {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .container-advantage .free-shipping .free-shipping-img, 
+  .container-advantage .free-shipping .days-return-img, 
+  .container-advantage .free-shipping .support-img, 
+  .container-advantage .days-return .free-shipping-img, 
+  .container-advantage .days-return .days-return-img, 
+  .container-advantage .days-return .support-img, 
+  .container-advantage .support .free-shipping-img, 
+  .container-advantage .support .days-return-img, 
+  .container-advantage .support .support-img {
+    min-width: 30px;
+    min-height: 30px;
+    margin-right: 20px;
+    background: url("../../assets/img/icons/truck.png") center/100% no-repeat;
+  }
+  
+  .container-advantage .free-shipping .days-return-img, 
+  .container-advantage .days-return .days-return-img, 
+  .container-advantage .support .days-return-img {
+    background: url("../../assets/img/icons/refresh.png") center/100% no-repeat;
+  }
+  
+  .container-advantage .free-shipping .support-img, 
+  .container-advantage .days-return .support-img, 
+  .container-advantage .support .support-img {
+    background: url("../../assets/img/icons/support.png") center/100% no-repeat;
+  }
+  
+  .container-advantage .free-shipping .title-advantage, 
+  .container-advantage .free-shipping .sub-title-advantage, 
+  .container-advantage .days-return .title-advantage, 
+  .container-advantage .days-return .sub-title-advantage, 
+  .container-advantage .support .title-advantage, 
+  .container-advantage .support .sub-title-advantage {
+    display: block;
+    font-family: "Spartan";
+    font-size: 12px;
+    padding: 5px 0;
+  }
+  
+  .container-advantage .free-shipping .title-advantage, 
+  .container-advantage .days-return .title-advantage, 
+  .container-advantage .support .title-advantage {
+    font-weight: 700;
+  }
+
+
+  

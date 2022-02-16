@@ -1,0 +1,107 @@
+.category {
+    width: 89%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  
+  .category .category-wrapper-title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .category .category-wrapper-title .category-title, 
+  .category .category-wrapper-title .category-filter-btn {
+    font-family: 'Spartan';
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .category .category-wrapper-title .category-filter-menu {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .category .category-wrapper-title .category-filter-menu .category-filter-btn {
+    background: none;
+    border: 0;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 60%;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 370px) {
+    .category .category-wrapper-title .category-filter-menu {
+      min-width: 220px;
+    }
+  }
+  
+  .category .category-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 370px) {
+    .category .category-card {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+  }
+  
+  .category .category-btn-see-all {
+    width: 100%;
+    height: 48px;
+    background: #F8F8F8;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .category .category-btn-see-all button {
+    border: none;
+    background: none;
+    font-family: 'Spartan';
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 13px;
+    opacity: 80%;
+    margin-top: 1.5%;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 370px) {
+    .category .category-btn-see-all button {
+      margin-top: 5%;
+    }
+  }
+  
+  @media screen and (max-width: 370px) {
+    .category .category-wrapper-title {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+  }

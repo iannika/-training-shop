@@ -1,0 +1,187 @@
+  .first-part {
+    width: 89%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .first-part .first-part-banner {
+    background: url(../../assets/img/banner.jpg) center/cover no-repeat;
+    width: 540px;
+    min-width: 420px;
+    height: 490px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .first-part .first-part-banner .first-part-circle {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+  }
+  
+  .first-part .first-part-banner .first-part-banner-text {
+    background: #fff;
+    width: 289px;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 4px;
+  }
+  
+  .first-part .first-part-banner .first-part-banner-text span {
+    width: 100%;
+    display: block;
+    font-family: "Spartan";
+    font-size: 12px;
+    letter-spacing: 6%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #121212;    
+    opacity: 40%;
+    margin: 5px 0;
+  }
+  
+  .first-part .first-part-banner .first-part-banner-text .text {
+    font-size: 22px;
+    opacity: 100%;
+  }
+  
+  @media screen and (max-width: 450px) {
+    .first-part .first-part-banner .first-part-banner-text {
+      width: calc(170px + (289 - 170) * ((100vw - 320px) / (1300 - 320)));
+      height: calc(70px + (100 - 70) * ((100vw - 320px) / (1300 - 320)));
+    }
+    .first-part .first-part-banner .first-part-banner-text .text {
+      font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1300 - 320)));
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .first-part .first-part-banner {
+      width: calc(300px + (540 - 300) * ((100vw - 320px) / (1300 - 320)));
+      height: calc(350px + (490 - 350) * ((100vw - 320px) / (1300 - 320)));
+      min-width: 30px;
+    }
+  }
+  
+  .first-part .first-part-group {
+    width: 50%;
+    min-width: 420px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    -webkit-column-gap: 15px;
+    column-gap: 15px;
+  }
+  
+  .first-part .first-part-group .first-part-women div, 
+  .first-part .first-part-group .first-part-accessories div, 
+  .first-part .first-part-group .first-part-men div {
+    background: #fff;
+    height: 48px;
+    border-radius: 4px;
+    margin: 30% auto;
+    text-align: center;
+    padding-top: 5%;
+  }
+  
+  .first-part .first-part-group .first-part-women div span, 
+  .first-part .first-part-group .first-part-accessories div span, 
+  .first-part .first-part-group .first-part-men div span {
+    font-family: "Spartan";
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #121212;
+    }
+  
+  @media screen and (max-width: 480px) {
+    .first-part .first-part-group .first-part-women div, 
+    .first-part .first-part-group .first-part-accessories div, 
+    .first-part .first-part-group .first-part-men div {
+      padding-top: 10%;
+    }
+  }
+  
+  .first-part .first-part-group .first-part-women {
+    background: url(../../assets/img/banner-women.jpg) center/cover no-repeat;
+    width: 47%;
+    height: 200px;
+  }
+  
+  .first-part .first-part-group .first-part-women div {
+    width: 118px;
+  }
+  
+  .first-part .first-part-group .first-part-men {
+    background: url(../../assets/img/banner-men.jpg) center/cover no-repeat;
+    width: 47%;
+    height: 200px;
+  }
+  
+  .first-part .first-part-group .first-part-men div {
+    width: 118px;
+  }
+  
+  .first-part .first-part-group .first-part-accessories {
+    background: url(../../assets/img/banner-accessories.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 260px;
+  }
+  
+  .first-part .first-part-group .first-part-accessories div {
+    width: 166px;
+    margin-top: 20%;
+    padding-top: 3%;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .first-part .first-part-group .first-part-accessories div {
+      padding-top: 5%;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .first-part .first-part-group {
+      width: 540px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .first-part .first-part-group {
+      min-width: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .header-part-one {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
