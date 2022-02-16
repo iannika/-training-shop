@@ -42,10 +42,10 @@ const Header = () => {
                         </div>
                     </div>
                     <div className='top-bar_social-networks'>
-                        <a href="#"><img src={facebook} alt='img'/></a>
-                        <a href="#"><img src={twitter} alt='img'/></a>
-                        <a href="#"><img src={instagram} alt='img'/></a>
-                        <a href="#"><img src={pinterest} alt='img'/></a>
+                        <a href="/#"><img src={facebook} alt='img'/></a>
+                        <a href="/#"><img src={twitter} alt='img'/></a>
+                        <a href="/#"><img src={instagram} alt='img'/></a>
+                        <a href="/#"><img src={pinterest} alt='img'/></a>
                     </div>
                 </div>
             </div>
