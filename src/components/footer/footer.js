@@ -32,10 +32,10 @@ const Footer = () => {
                         <button>Join Us</button>
                     </form>
                     <div className='top-bar_social-networks'>
-                        <a href="#"><img src={facebook} alt='img'/></a>
-                        <a href="#"><img src={twitter} alt='img'/></a>
-                        <a href="#"><img src={instagram} alt='img'/></a>
-                        <a href="#"><img src={pinterest} alt='img'/></a>
+                        <a href="/#"><img src={facebook} alt='img'/></a>
+                        <a href="/#"><img src={twitter} alt='img'/></a>
+                        <a href="/#"><img src={instagram} alt='img'/></a>
+                        <a href="/#"><img src={pinterest} alt='img'/></a>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                         <div><img src={discover} alt="img" /></div>
                         <div><img src={americanExpress} alt="img" /></div>
                     </div>
-                    <a href="#">Clevertec.ru/training</a>
+                    <a href="/#">Clevertec.ru/training</a>
                 </div>
             </div>
            
