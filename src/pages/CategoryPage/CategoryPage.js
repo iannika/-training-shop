@@ -1,5 +1,5 @@
 import React from 'react';
-import { Product } from "../../components/product/product";
+import { Product } from "../../component/product/product";
 import adjustments from "../../assets/img/adjustments.png";
 import viewGrid from "../../assets/img/view-grid.png";
 import viewList from "../../assets/img/view-list.png";
@@ -7,9 +7,9 @@ import viewList from "../../assets/img/view-list.png";
 import share from "../../assets/img/share.png";
 
 
-import "./MenWomenPage.css";
+import "./CategoryPage.css";
 
-const MenWomenPage = (page) => {
+const CategoryPage = (page) => {
 
     const typePage = page.page;
     const typePageUpper = typePage.toUpperCase();
@@ -54,4 +54,4 @@ const MenWomenPage = (page) => {
     )
 }
 
-export {MenWomenPage}
+export {CategoryPage}
