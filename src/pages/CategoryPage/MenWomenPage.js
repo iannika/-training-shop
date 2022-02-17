@@ -7,9 +7,9 @@ import viewList from "../../assets/img/view-list.png";
 import share from "../../assets/img/share.png";
 
 
-import "./CategoryPage.css";
+import "./MenWomenPage.css";
 
-const CategoryPage = (page) => {
+const MenWomenPage = (page) => {
 
     const typePage = page.page;
     const typePageUpper = typePage.toUpperCase();
@@ -54,4 +54,4 @@ const CategoryPage = (page) => {
     )
 }
 
-export {CategoryPage}
+export {MenWomenPage}
