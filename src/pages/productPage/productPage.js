@@ -1,10 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { RELATED_PRODUCTS } from "../../data/RELATED_PRODUCTS";
-import stars from '../../assets/img/stars.png';
-
 import share from "../../assets/img/share.png";
-
+import stars from '../../assets/img/stars.png';
 import arrowTop from '../../assets/img/chevron-top.png';
 import arrowBottom from '../../assets/img/chevron-bottom.png';
 import arrowLeft from '../../assets/img/chevron-left.png';
@@ -26,13 +24,14 @@ import truck from "../../assets/img/icons/truck.png";
 import refresh from "../../assets/img/icons/refresh.png";
 import mail from "../../assets/img/icons/mail.png";
 
-import "./productPage.css";
+import "./ProductPage.css";
 
 
 const ProductPage = (page) => {
     const pages = page.page;
-    const productType = pages.toLowerCase();
     const typePage = page.page;
+    const productType = pages.toLowerCase();
+    const pageType = page.page + ` ► ${page.page}'s tracksuit Q109`;
     
     return (
         <div className="page-product"  data-test-id={`product-page-${productType}`}>

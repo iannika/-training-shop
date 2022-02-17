@@ -1,20 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PRODUCTS } from "../../data/PRODUCTS";
+import {PRODUCTS} from "../../data/PRODUCTS";
 import stars from '../../assets/img/stars.png';
 
 import "./product.css";
 
-const Product = (categoryType) => {
-    const typeCategory = Object.values(categoryType).join();
-    console.log(typeCategory)
+const Product = (productType) => {
+    const typeProduct = Object.values(productType).join();
+    console.log(typeProduct)
     
     return (
         <>
             {PRODUCTS.map(({id, name, price, img, category}) => (
                 
-                typeCategory === category ?
-                <Link to={`/${typeCategory}/${id}`}  className="cards-item" data-test-id={`product-card-${typeCategory}`}key={`${category}${id}`} >
+                typeProduct === category ?
+                <Link 
+                    to={`/${typeProduct}/${id}`}  
+                    className="cards-item" 
+                    data-test-id={`products-card-${typeProduct}`}
+                    key={`${category}${id}`}
+                >
                         
                         <div className="wrapper-card-product">
                             <div className="card-product-img"><img src={img} alt="img" /></div>

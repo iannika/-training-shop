@@ -6,7 +6,8 @@ import viewList from "../../assets/img/view-list.png";
 
 import share from "../../assets/img/share.png";
 
-import "./categoryPage.css";
+
+import "./CategoryPage.css";
 
 const CategoryPage = (page) => {
 
@@ -19,6 +20,7 @@ const CategoryPage = (page) => {
     
     return (
         <div className='products-page' data-test-id={`products-page-${productType}`}>
+
             <div className='wrapper-products-page-nav'>
                 <div className='products-page-nav'>
                     <div className='products-page-nav_page'><span>Home</span> ► {typePage}</div>

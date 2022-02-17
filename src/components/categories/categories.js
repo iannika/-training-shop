@@ -5,7 +5,7 @@ import { buttons } from "../../data/BUTTONS";
 
 import "./categories.css";
 
-const Categories = () => {
+const Сategories = () => {
 
     return (
         <>
@@ -29,4 +29,5 @@ const Categories = () => {
     )
 }
 
-export {Categories}
+export {Сategories}
+

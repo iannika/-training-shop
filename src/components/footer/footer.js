@@ -5,12 +5,10 @@ import { INFORMATIONLINKS } from "../../data/INFORMATION_LINKS";
 import { USEFULLINKS } from "../../data/USEFUL_LINKS";
 import { CONTACTUSLINKS } from "../../data/CONTACT_US_LINKS";
 
-
 import facebook from "../../assets/img/icons/facebook.png";
 import twitter from "../../assets/img/icons/logo-twitter.png";
 import instagram from "../../assets/img/icons/instagram.png";
 import pinterest from "../../assets/img/icons/logo-pinterest.png";
-
 import stripe from "../../assets/img/stripe.png";
 import aes from "../../assets/img/AES256.png";
 import pay from "../../assets/img/paypal.png";
