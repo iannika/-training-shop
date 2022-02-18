@@ -6,7 +6,7 @@ import { Sale } from "../../components/sale/sale";
 import { SpecialOffer } from "../../components/specialOffer/specialOffer";
 import { Blog } from "../../components/blog/blog";
 
-const HomePage = () => {
+const MainPage = () => {
     return (
         <>
             <FirstPart />
@@ -18,4 +18,4 @@ const HomePage = () => {
         </>
     )
 }
-export {HomePage}
+export {MainPage}
