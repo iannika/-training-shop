@@ -31,7 +31,6 @@ const ProductPage = (page) => {
     const pages = page.page;
     const typePage = page.page;
     const productType = pages.toLowerCase();
-    const pageType = page.page + ` ► ${page.page}'s tracksuit Q109`;
     
     return (
         <div className="page-product"  data-test-id={`product-page-${productType}`}>
