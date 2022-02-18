@@ -1,6 +1,6 @@
-import location from "../assets/img/icons/location-marker.png"; 
+import location from "../assets/img/icons/location-marker-1.png"; 
 import telephone from "../assets/img/icons/phone.png"; 
-import clock from "../assets/img/icons/clock.png"; 
+import clock from "../assets/img/icons/clock-1.png"; 
 import mail from "../assets/img/icons/mail.png"; 
 
 export const CONTACTUSLINKS = [
