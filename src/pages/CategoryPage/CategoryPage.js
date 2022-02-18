@@ -1,5 +1,5 @@
 import React from 'react';
-import { Product } from "../../component/product/product";
+import { Product } from "../../components/product/product";
 import adjustments from "../../assets/img/adjustments.png";
 import viewGrid from "../../assets/img/view-grid.png";
 import viewList from "../../assets/img/view-list.png";
