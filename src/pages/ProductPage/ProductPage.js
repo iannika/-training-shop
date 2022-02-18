@@ -20,8 +20,8 @@ import heart from "../../assets/img/icons/heart.png";
 import scale from "../../assets/img/icons/scale.png";
 import pay from "../../assets/img/products/one-product/pay.png";
 import annotation from "../../assets/img/icons/annotation.png";
-import truck from "../../assets/img/icons/truck.png";
-import refresh from "../../assets/img/icons/refresh.png";
+import truck from "../../assets/img/icons/truck-1.png";
+import refresh from "../../assets/img/icons/refresh-1.png";
 import mail from "../../assets/img/icons/mail.png";
 
 import "./ProductPage.css";

@@ -41,25 +41,25 @@ const Footer = () => {
             <div className="wrapper-footer-nav">
                 <div className="footer-nav">
                     <strong>CATEGORIES</strong>
-                    {CATEGORYLINKS.map(({ id, path }) => (
+                    {CATEGORYLINKS.map(({ id, path, name }) => (
                         <Link key={id} to={`/${path}`} className='footer-nav-link' data-test-id={`footer-nav-link-${path}`}>
-                            <span>{path}</span>
+                            <span>{name}</span>
                         </Link>
                     ))}
                 </div>
                 <div className="footer-nav">
                     <strong>INFORMATION</strong>
-                    {INFORMATIONLINKS.map(({ id, path }) => (
+                    {INFORMATIONLINKS.map(({ id, path, name }) => (
                         <Link key={id} to={`/${path}`} className='footer-nav-link' data-test-id={`footer-nav-link-${path}`}>
-                            <span>{path}</span>
+                            <span>{name}</span>
                         </Link>
                     ))}
                 </div>
                 <div className="footer-nav">
                     <strong>USEFUL LINKS</strong>
-                    {USEFULLINKS.map(({ id, path }) => (
+                    {USEFULLINKS.map(({ id, path, name }) => (
                         <Link key={id} to={`/${path}`} className='footer-nav-link' data-test-id={`footer-nav-link-${path}`}>
-                            <span>{path}</span>
+                            <span>{name}</span>
                         </Link>
                     ))}
                 </div>
