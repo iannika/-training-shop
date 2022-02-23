@@ -12,7 +12,7 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: jucontainer-header-nav-menustify;
+    -ms-flex-pack: jucontainer-bottom-bar-nav-menustify;
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -92,13 +92,12 @@
   }
 
 
-
-  .container-header-nav-menu {
+  .container-bottom-bar {
     width: 100%;
     border-bottom: 2px solid #F8F8F8;
   }
   
-  .container-header-nav-menu .header-nav-menu {
+  .container-bottom-bar .bottom-bar-nav-menu {
     width: 87%;
     height: 66px;
     margin: 0 auto;
@@ -115,7 +114,7 @@
         flex-wrap: wrap;
   }
   
-  .container-header-nav-menu .header-nav-menu .header-nav-logo {
+  .container-bottom-bar .bottom-bar-nav-menu .bottom-bar-nav-logo {
     font-family: 'Playfair Display SC';
     font-size: 24px;
     text-decoration: none;
@@ -123,8 +122,8 @@
     color: #121212;
   }
   
-  .container-header-nav-menu .header-nav-menu .menu, 
-  .container-header-nav-menu .header-nav-menu .menu-nav {
+  .container-bottom-bar .bottom-bar-nav-menu .menu, 
+  .container-bottom-bar .bottom-bar-nav-menu .menu-nav {
     width: 53%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -138,8 +137,8 @@
     margin: 5px;
   }
   
-  .container-header-nav-menu .header-nav-menu .menu .menu-item, 
-  .container-header-nav-menu .header-nav-menu .menu-nav .menu-item {
+  .container-bottom-bar .bottom-bar-nav-menu .menu .menu-item, 
+  .container-bottom-bar .bottom-bar-nav-menu .menu-nav .menu-item {
     text-decoration: none;
     color: #121212;
     font-family: 'Spartan';
@@ -170,26 +169,26 @@
   }
   
   @media screen and (max-width: 940px) {
-    .container-header-nav-menu .header-nav-menu .menu {
+    .container-bottom-bar .bottom-bar-nav-menu .menu {
       width: 100%;
     }
   }
   
   @media screen and (max-width: 540px) {
-    .container-header-nav-menu .header-nav-menu .menu {
+    .container-bottom-bar .bottom-bar-nav-menu .menu {
       width: 460px;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
     }
   }
   
-  .container-header-nav-menu .header-nav-menu .menu-nav {
+  .container-bottom-bar .bottom-bar-nav-menu .menu-nav {
     width: 172px;
     cursor: pointer;
   }
   
   @media screen and (max-width: 940px) {
-    .container-header-nav-menu .header-nav-menu {
+    .container-bottom-bar .bottom-bar-nav-menu {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -197,7 +196,7 @@
   }
   
   @media screen and (max-width: 540px) {
-    .container-header-nav-menu .header-nav-menu {
+    .container-bottom-bar .bottom-bar-nav-menu {
       height: calc(100px + (66 - 100) * ((100vw - 320px) / (1300 - 320)));
     }
   }

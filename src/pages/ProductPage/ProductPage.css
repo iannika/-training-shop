@@ -159,7 +159,7 @@
 .page-product .wrapper-product-information .product-information-img .product-information-main-img .main-img {
   width: 448px;
   height: 560px;
-  background: url(../../assets/img/products/women-1.jpg) center/100% no-repeat;
+  background: url(../../assets/img/products//one-product/product.png) center/100% no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,14 +172,14 @@
   padding: 0 20px;
 }
 
-.page-product .wrapper-product-information .product-information-img .product-information-main-img .main-img .arrow-circle-right, 
-.page-product .wrapper-product-information .product-information-img .product-information-main-img .main-img .arrow-circle-left {
+.page-product .wrapper-product-information .product-information-img .product-information-main-img .main-img .chevron-circle-right, 
+.page-product .wrapper-product-information .product-information-img .product-information-main-img .main-img .chevron-circle-left {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #ffff;
   text-align: center;
-  padding-top: 2.5%;
+  padding-top: 2%;
 }
 
 @media screen and (max-width: 1180px) {
@@ -383,16 +383,25 @@
   padding: 10px 0 40px 0;
 }
 
+@media screen and (max-width: 500px) {
+  .page-product .wrapper-product-information .product-information-information {
+    min-width: calc(250px + (460 - 250) * ((100vw - 320px) / (1280 - 320)));
+    padding-left: 0;
+  }
+}
+
 .page-product .related-products {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 40px;
 }
 
@@ -402,20 +411,13 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .page-product .related-products .related-products-btn button {
   border: none;
   background: none;
+  cursor: pointer;
 }
 
-.page-product .related-products-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}

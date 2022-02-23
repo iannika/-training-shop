@@ -1,0 +1,70 @@
+.burger {
+    width: 2.5rem;
+    height: 2rem;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    z-index: 20;
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+    .burger {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column nowrap;        
+    }
+}
+.burger span {
+    width: 2.5rem;
+    height: 0.25rem;
+    background-color: #212121;
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+    -webkit-transform-origin: left center;
+       -moz-transform-origin: left center;
+         -o-transform-origin: left center;
+            transform-origin: left center;
+  }
+  
+  .burger span:nth-child(2) {
+    top: 9px;
+    -webkit-transform-origin: left center;
+       -moz-transform-origin: left center;
+         -o-transform-origin: left center;
+            transform-origin: left center;
+  }
+  
+  .burger span:nth-child(3) {
+    top: 18px;
+    -webkit-transform-origin: left center;
+       -moz-transform-origin: left center;
+         -o-transform-origin: left center;
+            transform-origin: left center;
+  }
+  
+  .burger .open span:nth-child(1) {
+    left: 4px;
+    top: -1px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  .burger .open span:nth-child(2) {
+    opacity: 0;
+    width: 0;
+  }
+  
+  .burger.open span:nth-child(3) {
+    left: 4px;
+    top: 20px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+

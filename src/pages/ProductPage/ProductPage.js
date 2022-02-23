@@ -1,16 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { RELATED_PRODUCTS } from "../../data/RELATED_PRODUCTS";
+import { Sliders } from "../../components/sliders/sliders";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+
 import share from "../../assets/img/share.png";
 import stars from '../../assets/img/stars.png';
-import arrowTop from '../../assets/img/chevron-top.png';
-import arrowBottom from '../../assets/img/chevron-bottom.png';
-import arrowLeft from '../../assets/img/chevron-left.png';
-import arrowRight from '../../assets/img/chevron-right.png';
-import img1 from "../../assets/img/products/one-product/product-1.png";
-import img2 from "../../assets/img/products/one-product/product-2.png";
-import img3 from "../../assets/img/products/one-product/product-3.png";
-import img4 from "../../assets/img/products/one-product/product-4.png";
+// import chevronTop from '../../assets/img/chevron-top.png';
+// import chevronBottom from '../../assets/img/chevron-bottom.png';
+import chevronLeft from '../../assets/img/chevron-left.png';
+import chevronRight from '../../assets/img/chevron-right.png';
+// import img1 from "../../assets/img/products/one-product/product-1.png";
+// import img2 from "../../assets/img/products/one-product/product-2.png";
+// import img3 from "../../assets/img/products/one-product/product-3.png";
+// import img4 from "../../assets/img/products/one-product/product-4.png";
 import productBlue from "../../assets/img/products/one-product/product-blue.png";
 import productWhite from "../../assets/img/products/one-product/product-white.png";
 import productBlack from "../../assets/img/products/one-product/product-black.png";
@@ -23,6 +28,8 @@ import annotation from "../../assets/img/icons/annotation.png";
 import truck from "../../assets/img/icons/truck-1.png";
 import refresh from "../../assets/img/icons/refresh-1.png";
 import mail from "../../assets/img/icons/mail.png";
+
+
 
 import "./ProductPage.css";
 
@@ -52,10 +59,11 @@ const ProductPage = (page) => {
             </div>
             <div className="wrapper-product-information">
                 <div className="product-information-img">
-                    <div className="product-information-review">
+                    <Sliders />
+                    {/* <div className="product-information-review">
                         <div className="product-information-btn">
-                            <button><img src={arrowTop} alt='img' /></button>
-                            <button><img src={arrowBottom} alt='img' /></button>
+                            <button><img src={chevronTop} alt='img' /></button>
+                            <button><img src={chevronBottom} alt='img' /></button>
                         </div>
                         <img src={img1} alt='img' className="img"/>
                         <img src={img2} alt='img' className="img"/>
@@ -64,10 +72,10 @@ const ProductPage = (page) => {
                     </div>
                     <div className='product-information-main-img'>
                         <div className='main-img'>
-                            <div className='arrow-circle-left'><img src={arrowLeft} alt='img' /></div>
-                            <div className='arrow-circle-right'><img src={arrowRight} alt='img' /></div>
+                            <div className='chevron-circle-left'><img src={chevronLeft} alt='img' /></div>
+                            <div className='chevron-circle-right'><img src={chevronRight} alt='img' /></div>
                         </div>             
-                    </div>
+                    </div> */}
                 </div>
                 <div className="product-information-information">
                     <div className="product-information-color">
@@ -149,32 +157,57 @@ const ProductPage = (page) => {
             <div className="related-products">
                 <span className="title">RELATED PRODUCTS</span>
                 <div className="related-products-btn">
-                    <button><img src={arrowLeft} alt='img' /></button>
-                    <button><img src={arrowRight} alt='img' /></button>
+                    <button className="sliderLeft-btn"><img src={chevronLeft} alt='img' /></button>
+                    <button className="sliderRight-btn"><img src={chevronRight} alt='img' /></button>
                 </div>
             </div>
             <div className="related-products-card">
+
+            <Swiper
+                slidesPerView = {1}
+                spaceBetween = {10}
+                slidesPerGroup = {1}
+                modules = {[Navigation]}
+                breakpoints = {{
+                    1200: {
+                        slidesPerView: 4,
+                    },
+                    900: {
+                        slidesPerView: 3,
+                    },
+                    600: {
+                        slidesPerView: 2,
+                    },
+                }}
+                className="related-products-swiper" data-test-id="related-slider"
+                navigation = {{
+                    nextEl: '.sliderLeft-btn',
+                    prevEl: '.sliderRight-btn',
+                }} >
+            
                 
             {RELATED_PRODUCTS.map(({id, name, price, img, category}) => (
-
-                <Link 
-                    to={`/${category}/${id}`} 
-                    key={`${category}${id}`} 
-                    className="cards-item" 
-                    data-test-id={`clothes-card-${category}`}>
-                        
-                        <div className="wrapper-card-product">
-                            <div className="card-product-img"><img src={img} alt="img" /></div>
-                            <span className="card-product-name">{name}</span>
-                            <div className="wrapper-card-product-price-starts">
-                                <span className="card-product-price">{price}</span>
-                                <img src={stars} alt="stars" />
+                <SwiperSlide to={`/${category}/${id}`} key={`${category}${id}`}>
+                    <Link 
+                        to={`/${category}/${id}`} 
+                        key={`${category}${id}`} 
+                        className="cards-item" 
+                        data-test-id={`clothes-card-${category}`}>
+                            
+                            <div className="wrapper-card-product">
+                                <div className="card-product-img"><img src={img} alt="img" /></div>
+                                <span className="card-product-name">{name}</span>
+                                <div className="wrapper-card-product-price-starts">
+                                    <span className="card-product-price">{price}</span>
+                                    <img src={stars} alt="stars" />
+                                </div>
                             </div>
-                        </div>
-                </Link>
+                    </Link>
+                </SwiperSlide>
             ))}
+            </Swiper>
             </div>
-            
+
         </div>
     )
 }

@@ -1,0 +1,123 @@
+.container-bottom-bar .bottom-bar-nav-menu {
+    width: 87%;
+    height: 66px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .container-bottom-bar .bottom-bar-nav-menu .bottom-bar-nav-logo {
+    font-family: 'Playfair Display SC';
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #121212;
+  }
+  
+  .container-bottom-bar .bottom-bar-nav-menu .menu, 
+  .container-bottom-bar .bottom-bar-nav-menu .menu-nav {
+    width: 53%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style-type: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+  
+  .container-bottom-bar .bottom-bar-nav-menu .menu .menu-item, 
+  .container-bottom-bar .bottom-bar-nav-menu .menu-nav .menu-item {
+    text-decoration: none;
+    color: #121212;
+    font-family: 'Spartan';
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .menu-nav .count {
+    position: absolute;
+    /* top: -3px; */
+    right: 80px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: #121212;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 940px) {
+    .container-bottom-bar .bottom-bar-nav-menu .menu {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .container-bottom-bar .bottom-bar-nav-menu .menu {
+      width: 460px;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .container-bottom-bar .bottom-bar-nav-menu .menu-nav {
+    width: 172px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 940px) {
+    .container-bottom-bar .bottom-bar-nav-menu {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 940px) {
+    .menu {
+        /* display: none; */
+        padding: 20px 20px;
+        flex-flow: column nowrap;
+        /* background-color: rgba(255, 255, 255, 0.6); */
+        background-color: rgba(18, 18, 18, 0.4);
+        position: fixed;
+        /* transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'}; */
+        top: 0;
+        right: 0;
+        height: 80vh;
+        width: 300px;
+        padding-top: 6.5rem;
+    }
+    /* .menu span {
+        color: #fff;
+    } */
+  }
+  
+  @media screen and (max-width: 540px) {
+    .container-bottom-bar .bottom-bar-nav-menu {
+      height: calc(100px + (66 - 100) * ((100vw - 320px) / (1300 - 320)));
+    }
+  }

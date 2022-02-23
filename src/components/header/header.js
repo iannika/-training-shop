@@ -12,8 +12,11 @@ import globe from "../../assets/img/icons/globe.png";
 import user from "../../assets/img/icons/user.png";
 import shoppingBag from "../../assets/img/icons/shopping-bag.png";
 
+// import { Menu } from '../../components/menu/menu';
+import { Burger } from '../../components/burger/burger';
+
 import { Link } from "react-router-dom";
-import { MENU } from '../../data/MENU';
+// import { MENU } from '../../data/MENU';
 
 
 
@@ -49,23 +52,25 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='container-header-nav-menu'>
-                <nav className='header-nav-menu'>
-                <Link to="/" className='header-nav-logo' data-test-id='header-logo-link'>CleverShop</Link>
-                    <div className='menu' data-test-id='menu'>
+            <div className='container-bottom-bar'>
+                <nav className='bottom-bar-nav-menu'>
+                    <Link to="/" className='bottom-bar-nav-logo' data-test-id='bottom-bar-logo-link'>CleverShop</Link>
+                    {/* <div className='menu' data-test-id='menu'>
                         {MENU.map(({ id, path, name }) => (
                             <Link key={id} to={`/${path}`} className='menu-item' data-test-id={`menu-link-${path}`}>
                                 <span>{name}</span>
                             </Link>
                         ))}
-                    </div>
+                    </div> */}
+                    
+                    <Burger />
                     
                     <div className='menu-nav'>
                         <img src={search} alt='img' />
                         <img src={globe} alt='img' />
                         <img src={user} alt='img' />
                         <img src={shoppingBag} alt='img' />
-                        <div className="count"><p>2</p></div>
+                        {/* <div className="count"><p>2</p></div> */}
                     </div>          
                 </nav>
             </div>
