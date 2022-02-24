@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import tel from "../../assets/img/icons/phone.png";
 import location from "../../assets/img/icons/location-marker.png";
 import clock from "../../assets/img/icons/clock.png";
@@ -12,11 +13,10 @@ import globe from "../../assets/img/icons/globe.png";
 import user from "../../assets/img/icons/user.png";
 import shoppingBag from "../../assets/img/icons/shopping-bag.png";
 
-// import { Menu } from '../../components/menu/menu';
-import { Burger } from '../../components/burger/burger';
-
 import { Link } from "react-router-dom";
-// import { MENU } from '../../data/MENU';
+import { MENU } from '../../data/MENU';
+import { useState } from 'react';
+
 
 
 
@@ -25,6 +25,12 @@ import './header.css';
 
 
 const Header = () => {
+
+    const [isMenuOpen, toggleMenu] = useState(false);
+	function toggleMenuMode() {
+		toggleMenu(!isMenuOpen);
+	}
+
     return (
 
         <div className='header' data-test-id='header'>
@@ -55,23 +61,27 @@ const Header = () => {
             <div className='container-bottom-bar'>
                 <nav className='bottom-bar-nav-menu'>
                     <Link to="/" className='bottom-bar-nav-logo' data-test-id='bottom-bar-logo-link'>CleverShop</Link>
-                    {/* <div className='menu' data-test-id='menu'>
+                    <div className={classNames('burger-menu', {visible: isMenuOpen})} data-test-id='burger-menu'>
                         {MENU.map(({ id, path, name }) => (
-                            <Link key={id} to={`/${path}`} className='menu-item' data-test-id={`menu-link-${path}`}>
+                            <Link key={id} to={`/${path}`} className='menu-item' data-test-id={`menu-link-${path}`} onClick={toggleMenu}>
                                 <span>{name}</span>
                             </Link>
                         ))}
-                    </div> */}
-                    
-                    <Burger />
-                    
+
+                    </div>                    
                     <div className='menu-nav'>
                         <img src={search} alt='img' />
                         <img src={globe} alt='img' />
                         <img src={user} alt='img' />
                         <img src={shoppingBag} alt='img' />
                         {/* <div className="count"><p>2</p></div> */}
-                    </div>          
+
+                        <div  className={classNames("burger-menu-btn", { visible: isMenuOpen })} onClick={toggleMenuMode} data-test-id="burger-menu-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>                       
                 </nav>
             </div>
         </div> 

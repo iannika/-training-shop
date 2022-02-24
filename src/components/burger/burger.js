@@ -1,24 +1,21 @@
 import React, {useState} from 'react';
-
-import { Menu } from '../../components/menu/menu';
+import classNames from 'classnames';
 
 
 import './burger.css';
 
 
-const Burger = () => {
-
-    const [open, setOpen] = useState(false)
+const Burger = (isMenuOpen, toggleMenuMode) => {
 
     return (
         <>
-            <div className='burger' open={open} onClick={() => setOpen(!open)} data-test-id='burger-menu'>
+            <div  className={classNames("burger-menu", { visible: isMenuOpen })} onClick={toggleMenuMode} data-test-id='burger-menu'>
                 <span></span>
                 <span></span>
                 <span></span>
 
             </div>
-            <Menu open={open}/>
+
         </>
     )
 }
