@@ -60,22 +60,6 @@ const ProductPage = (page) => {
             <div className="wrapper-product-information">
                 <div className="product-information-img">
                     <Sliders />
-                    {/* <div className="product-information-review">
-                        <div className="product-information-btn">
-                            <button><img src={chevronTop} alt='img' /></button>
-                            <button><img src={chevronBottom} alt='img' /></button>
-                        </div>
-                        <img src={img1} alt='img' className="img"/>
-                        <img src={img2} alt='img' className="img"/>
-                        <img src={img3} alt='img' className="img"/>
-                        <img src={img4} alt='img' className="img"/>
-                    </div>
-                    <div className='product-information-main-img'>
-                        <div className='main-img'>
-                            <div className='chevron-circle-left'><img src={chevronLeft} alt='img' /></div>
-                            <div className='chevron-circle-right'><img src={chevronRight} alt='img' /></div>
-                        </div>             
-                    </div> */}
                 </div>
                 <div className="product-information-information">
                     <div className="product-information-color">
@@ -181,8 +165,8 @@ const ProductPage = (page) => {
                 }}
                 className="related-products-swiper" data-test-id="related-slider"
                 navigation = {{
-                    nextEl: '.sliderLeft-btn',
-                    prevEl: '.sliderRight-btn',
+                    nextEl: '.sliderRight-btn',
+                    prevEl: '.sliderLeft-btn',
                 }} >
             
                 
