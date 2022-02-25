@@ -21,7 +21,7 @@
 
 .product-slider .swiper-button-prev::after, .product-slider .swiper-button-next::after {
     font-size: 15px;
-    color: #000;
+    color: #121212;
 }
 
 .product-slider .product-slider-second .swiper-slide {
@@ -56,26 +56,12 @@
 }
 
 @media screen and (max-width: 580px) {
-    .product-slider .product-slider-first .swiper-slide > img {
+    .product-slider {
+        height: calc(300px + (600 - 300) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .product-slider .swiper-wrapper .swiper-slide img {
         width: calc(215px + (448 - 215) * ((100vw - 320px) / (1200 - 320)));
         height: calc(300px + (560 - 300) * ((100vw - 320px) / (1200 - 320)));
     }
 
-    .product-slider .product-slider-second .swiper-slide {
-        width: calc(50px + (100 - 50) * ((100vw - 320px) / (1200 - 320)));
-        height: calc(75px + (115 - 75) * ((100vw - 320px) / (1200 - 320))) !important;
-    }
-
-    .product-slider .product-slider-second .swiper-wrapper {
-        height: calc(240px + (550 - 240) * ((100vw - 320px) / (1200 - 320)));
-    }
-
-    .product-slider .product-slider-second .swiper-slide img {
-        width: calc(47px + (94 - 47) * ((100vw - 320px) / (1200 - 320)));
-        height: calc(57px + (114 - 57) * ((100vw - 320px) / (1200 - 320)));
-    }
-
-    .product-slider {
-        height: calc(300px + (600 - 300) * ((100vw - 320px) / (1200 - 320)));
-    }
-}
+  }
