@@ -102,10 +102,17 @@ const ProductPage = (page) => {
                             </div>
                         </div>
 
-                        <div className="product-information-pay">
-                            <span className="title">GUARANTEED SAFE CHECKOUT</span>
-                            <img src={pay} alt='img' />
+                        <div className="product-information">
+                            <div className="product-information-title">
+                                <span className="title">GUARANTEED SAFE CHECKOUT</span>
+                                <div className="line"></div>
+                                {/* <img src={pay} alt='img' /> */}
+                            </div>
+                            <div className="product-information-pay">
+                                <img src={pay} alt='img' />
+                            </div>
                         </div>
+                        
                         <div className="product-information-description">
                             <button>DESCRIPTION</button>
                         </div>

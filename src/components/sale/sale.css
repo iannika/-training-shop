@@ -77,6 +77,9 @@
     .container-sale .sale-new, 
     .container-sale .new-sale {
       height: calc(150px + (260 - 150) * ((100vw - 320px) / (1280 - 320)));
+    }    
+    .container-sale .sale-new {
+      margin-bottom: 15px;
     }
   }
   

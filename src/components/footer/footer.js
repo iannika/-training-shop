@@ -24,10 +24,10 @@ const Footer = () => {
         <div className="footer" data-test-id="footer">
             <div className="wrapper-footer-contact-form">
                 <div className="footer-contact-form">
-                    <span>BE IN TOUCH WITH US:</span>
+                    <span className="contact-form-title">BE IN TOUCH WITH US:</span>
                     <form className="contact-form">
-                        <input type="text" placeholder="Enter your email"  />
-                        <button>Join Us</button>
+                        <input type="text" className="contact-form-input" placeholder="Enter your email"  />
+                        <button className="contact-form-button">Join Us</button>
                     </form>
                     <div className='top-bar_social-networks'>
                         <a href="/#"><img src={facebook} alt='img'/></a>

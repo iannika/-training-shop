@@ -23,7 +23,7 @@
   .category .category-wrapper-title .category-filter-btn {
     font-family: 'Spartan';
     letter-spacing: 2px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 22px;
   }
   
@@ -51,6 +51,18 @@
   @media screen and (max-width: 370px) {
     .category .category-wrapper-title .category-filter-menu {
       min-width: 220px;
+
+      flex-direction: column;
+      text-align: center;
+      padding-top: 15px;
+    }
+    .category .category-wrapper-title .category-filter-menu .category-filter-btn{
+      margin-bottom: 10px;
+    }
+
+    .category .category-wrapper-title {
+      text-align: center;
+      flex-direction: column;
     }
   }
   
